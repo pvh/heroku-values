@@ -10,6 +10,10 @@ class Heroku::Command::Values < Heroku::Command::Base
     values = [
       "Clarity beats simplicity.
     ]
+
+    values.each do |value|
+      puts value
+    end
   end
 
 private
