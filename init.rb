@@ -8,7 +8,7 @@ class Heroku::Command::Values < Heroku::Command::Base
   #
   def index
     values = [
-      "Clarity beats simplicity.
+      "Clarity beats simplicity."
     ]
 
     values.each do |value|
