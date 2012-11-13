@@ -16,10 +16,4 @@ class Heroku::Command::Values < Heroku::Command::Base
     end
   end
 
-private
-
-  def optional_app
-    app rescue nil
-  end
-
 end
