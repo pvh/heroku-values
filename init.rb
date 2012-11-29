@@ -2,40 +2,43 @@ require "heroku/command/base"
 
 class Heroku::Command::Values < Heroku::Command::Base
 
-  # values
+  # output a random value
   #
-  # our company values
-  #
-  def values
-    values = <<END
-    software runs better online.
-    services are better than software
-    take the extra time to make it beautiful.
-    move fast and improve over time.
-    grow your user base. the first version should ship to one person.
-    invest resources in things that are working.
-    experiment constantly at a small scale.
-    be ultimately responsible for what you do.
-    failure is a systemic issue, not a personal one. vigilance doesn't work.
-    developers are worthy of great experiences.
-    however well we're doing, we can always do better.
-    don't build it till you need it. (pain driven development)
-    this is a long-term project.
-    big projects are shipped in many small pieces.
-    have the fewest simplest dependencies as possible.
-    prefer to have fewer, better {features,products,parts,offices,cars}.
-    easy to use is important and easy to understand is even better.
-END
-    values.split("\n")
-  end
-
   def index
     puts values[rand(values.length)]
   end
 
+  # output all values
+  #
   def all
     values.each do |value|
       puts value
     end
   end
+
+  private
+    # our company values
+    #
+    def values
+      [
+        "Software runs better online.",
+        "Services are better than software.",
+        "Take the extra time to make it beautiful.",
+        "Move fast and improve over time.",
+        "Grow your user base. The first version should ship to one person.",
+        "Invest resources in things that are working.",
+        "Experiment constantly at a small scale.",
+        "Be ultimately responsible for what you do.",
+        "Failure is a systemic issue, not a personal one. Vigilance doesn't work.",
+        "Developers are worthy of great experiences.",
+        "However well we're doing, we can always do better.",
+        "Don't build it till you need it (pain driven development).",
+        "This is a long-term project.",
+        "Big projects are shipped in many small pieces.",
+        "Have the fewest simplest dependencies as possible.",
+        "Prefer to have fewer but better features, products, parts, offices, and cars.",
+        "Easy to use is important and easy to understand is even better."
+      ]
+    end
+
 end
