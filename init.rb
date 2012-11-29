@@ -9,8 +9,9 @@ class Heroku::Command::Values < Heroku::Command::Base
   def values
     values = <<END
     software runs better online.
-    services are better than software
-    take the extra time to make it beautiful.
+    services are better than software.
+    respect for detail shows respect for users.
+    beauty, not beautification.
     move fast and improve over time.
     grow your user base. the first version should ship to one person.
     invest resources in things that are working.
