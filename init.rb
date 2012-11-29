@@ -23,8 +23,8 @@ class Heroku::Command::Values < Heroku::Command::Base
       [
         "Software runs better online.",
         "Services are better than software.",
-        "Take the extra time to make it beautiful.",
         "Move fast and improve over time.",
+        "Beauty is a result of good design, not something added at the end."
         "Grow your user base. The first version should ship to one person.",
         "Invest resources in things that are working.",
         "Experiment constantly at a small scale.",
@@ -37,7 +37,8 @@ class Heroku::Command::Values < Heroku::Command::Base
         "Big projects are shipped in many small pieces.",
         "Have the fewest simplest dependencies as possible.",
         "Prefer to have fewer but better features, products, parts, offices, and cars.",
-        "Easy to use is important and easy to understand is even better."
+        "Easy to use is important and simple to understand is even better."
+        "Respect for detail shows respect for users."
       ]
     end
 
