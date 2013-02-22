@@ -1,4 +1,5 @@
 require "heroku/command/base"
+require "restclient"
 
 class Heroku::Command::Values < Heroku::Command::Base
 
